@@ -1,0 +1,62 @@
+/* Modern CSS Reset - Production Safe */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff !important;
+  color: #0e1a32;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Prevent layout shifts in production builds */
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Ensure images and media don't break layouts */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove default button/input styles that might interfere */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Prevent text overflow */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}

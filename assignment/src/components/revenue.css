@@ -1,0 +1,822 @@
+/* revenue.css - 120+ Revenue Streams Section */
+
+:root {
+  --bg: #0A1A2F;
+  --gold: #D4AF37;
+  --gold-2: #FFCC66;
+  --foreground: #ffffff;
+  --white: #ffffff;
+  --dark-text: #0A1A2F;
+}
+
+/* Master container */
+.revenue-master {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Individual sections */
+.revenue-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  overflow: hidden;
+}
+
+/* Background variations */
+.navy-bg {
+  background: var(--bg);
+  color: var(--white);
+}
+
+.white-bg {
+  background: var(--white);
+  color: var(--dark-text);
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+.section-content {
+  padding: 2rem;
+}
+
+.section-content.centered {
+  text-align: center;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  color: var(--gold);
+  text-align: center;
+}
+
+.section-title.dark {
+  color: var(--dark-text);
+}
+
+.section-title.centered {
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gold-2);
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.section-subtitle.dark {
+  color: var(--gold);
+}
+
+/* ===== SECTION 1: Opening ===== */
+.opening-statement {
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
+.statement-line {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: var(--dark-text);
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.statement-line.dark {
+  color: var(--dark-text);
+}
+
+.statement-line strong {
+  color: var(--gold);
+  font-weight: 800;
+}
+
+.power-statement {
+  margin-top: 3rem;
+}
+
+.power-text {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  color: var(--dark-text);
+  line-height: 1.7;
+  text-align: center;
+  font-weight: 600;
+}
+
+.power-text.dark {
+  color: var(--dark-text);
+}
+
+.power-text.emphasis {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.gold-text {
+  color: var(--gold);
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+
+.badge-120 {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, var(--gold), var(--gold-2));
+  padding: 1.5rem 3rem;
+  border-radius: 50px;
+  margin: 3rem auto;
+  box-shadow: 0 10px 40px rgba(212, 175, 55, 0.5);
+}
+
+.infinity-icon {
+  width: 50px;
+  height: 50px;
+  color: var(--bg);
+}
+
+.badge-text {
+  font-size: 2rem;
+  color: var(--bg);
+  font-weight: 800;
+}
+
+/* 3D Canvas containers */
+.revenue-3d-container,
+.revenue-3d-container-2 {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.revenue-3d-container {
+  top: 15%;
+  right: 5%;
+}
+
+.revenue-3d-container-2 {
+  bottom: 15%;
+  left: 5%;
+}
+
+.revenue-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: drop-shadow(0 15px 50px rgba(212, 175, 55, 0.4));
+}
+
+/* ===== SECTION 2: Categories ===== */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.category-card {
+  background: rgba(212, 175, 55, 0.08);
+  padding: 3rem;
+  border-radius: 25px;
+  border: 3px solid var(--gold);
+  transition: all 0.4s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 60px rgba(212, 175, 55, 0.6);
+  background: rgba(212, 175, 55, 0.12);
+  border-color: var(--gold-2);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+.category-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.category-icon {
+  width: 45px;
+  height: 45px;
+  color: var(--white);
+}
+
+.category-title-group {
+  flex: 1;
+}
+
+.category-title {
+  font-size: 2rem;
+  color: var(--gold-2);
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.category-count {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--bg);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.streams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.8rem;
+  margin: 2rem 0;
+}
+
+.stream-badge {
+  background: rgba(255, 204, 102, 0.15);
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+  border: 1px solid rgba(255, 204, 102, 0.3);
+  transition: all 0.3s ease;
+}
+
+.stream-badge:hover {
+  background: rgba(255, 204, 102, 0.25);
+  transform: scale(1.05);
+  border-color: var(--gold-2);
+}
+
+.category-quote {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.25), rgba(255, 204, 102, 0.15));
+  border-radius: 15px;
+  border: 2px solid var(--gold-2);
+  font-size: 1.5rem;
+  color: var(--gold-2);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ===== SECTION 3: Earning Potential ===== */
+.earning-intro {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--dark-text);
+  font-weight: 700;
+}
+
+.earning-intro.dark {
+  color: var(--dark-text);
+}
+
+.earning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin: 3rem 0;
+}
+
+.earning-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(255, 204, 102, 0.1));
+  border-radius: 25px;
+  border: 3px solid var(--gold);
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.earning-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 20px 50px rgba(212, 175, 55, 0.5);
+}
+
+.earning-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.earning-level {
+  font-size: 1.8rem;
+  color: var(--dark-text);
+  font-weight: 800;
+  margin: 0;
+}
+
+.earning-range {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.ocean-statement {
+  margin-top: 4rem;
+  padding: 3rem;
+  background: rgba(212, 175, 55, 0.1);
+  border-radius: 25px;
+  border: 3px solid var(--gold);
+  text-align: center;
+}
+
+.ocean-text {
+  font-size: 2.5rem;
+  color: var(--dark-text);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.ocean-text.dark {
+  color: var(--dark-text);
+}
+
+/* ===== SECTION 4: Final CTA ===== */
+.cta-section {
+  padding: 6rem 2rem;
+}
+
+.final-cta-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cta-icon {
+  width: 80px;
+  height: 80px;
+  color: var(--gold);
+  margin: 0 auto 2rem;
+}
+
+.cta-message {
+  font-size: 2.2rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  color: var(--white);
+  text-align: center;
+  font-weight: 600;
+}
+
+.cta-message strong {
+  color: var(--gold);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.cta-btn {
+  border: none;
+  padding: 1.5rem 3rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.3rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Playfair Display', serif;
+  margin: 2rem auto;
+  display: block;
+}
+
+.cta-btn.primary {
+  background: linear-gradient(135deg, var(--gold), var(--gold-2));
+  color: var(--dark-text);
+  box-shadow: 0 10px 40px rgba(212, 175, 55, 0.4);
+}
+
+.cta-btn.large {
+  padding: 2rem 4rem;
+  font-size: 1.6rem;
+}
+
+.cta-scroll {
+  font-size: 1.4rem;
+  color: var(--white);
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* ===== Geometric Shapes & Animations ===== */
+.geometric-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.shape-1 {
+  width: 220px;
+  height: 220px;
+  top: 15%;
+  left: 8%;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(255, 215, 137, 0.1));
+}
+
+.shape-2 {
+  width: 300px;
+  height: 300px;
+  bottom: 10%;
+  right: 12%;
+  border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.18), rgba(255, 215, 137, 0.09));
+}
+
+.shape-3 {
+  width: 180px;
+  height: 180px;
+  top: 50%;
+  left: 40%;
+  border-radius: 30% 70% 70% 30% / 60% 40% 60% 40%;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(255, 215, 137, 0.06));
+}
+
+/* White background shapes - darker for visibility */
+.white-bg .shape {
+  opacity: 0.7;
+}
+
+.white-bg .shape-1,
+.white-bg .shape-2,
+.white-bg .shape-3 {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.3), rgba(255, 215, 137, 0.15));
+}
+
+/* Connecting lines */
+.geometric-line {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.4), transparent);
+  transform-origin: left center;
+}
+
+.line-1 {
+  top: 30%;
+  left: 20%;
+  width: 150px;
+}
+
+.line-2 {
+  bottom: 35%;
+  right: 25%;
+  width: 120px;
+  transform: rotate(-45deg);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .revenue-section {
+    min-height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .earning-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .revenue-3d-container,
+  .revenue-3d-container-2 {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .statement-line {
+    font-size: 1.5rem;
+  }
+
+  .power-text {
+    font-size: 1.3rem;
+  }
+
+  .gold-text {
+    font-size: 1.8rem;
+  }
+
+  .badge-120 {
+    padding: 1rem 2rem;
+  }
+
+  .infinity-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .badge-text {
+    font-size: 1.5rem;
+  }
+
+  .category-card {
+    padding: 2rem;
+  }
+
+  .category-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .category-title {
+    font-size: 1.6rem;
+  }
+
+  .streams-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .earning-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .earning-range {
+    font-size: 2rem;
+  }
+
+  .ocean-text {
+    font-size: 1.8rem;
+  }
+
+  .revenue-3d-container,
+  .revenue-3d-container-2 {
+    display: none;
+  }
+
+  .shape-1,
+  .shape-2,
+  .statement-line {
+    font-size: 1.3rem;
+  }
+
+  .power-text {
+    font-size: 1.1rem;
+  }
+
+  .power-text.emphasis {
+    font-size: 1.3rem;
+  }
+
+  .gold-text {
+    font-size: 1.5rem;
+  }
+
+  .badge-120 {
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+  }
+
+  .badge-text {
+    font-size: 1.3rem;
+  }
+
+  .category-card {
+    padding: 1.5rem;
+  }
+
+  .category-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .category-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .category-title {
+    font-size: 1.4rem;
+  }
+
+  .category-quote {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  .earning-card {
+    padding: 2rem;
+  }
+
+  .earning-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .earning-level {
+    font-size: 1.4rem;
+  }
+
+  .earning-range {
+    font-size: 1.6rem;
+  }
+
+  .ocean-text {
+    font-size: 1.5rem;
+  }
+
+  .cta-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cta-message {
+    font-size: 1.6rem;
+  }
+
+  .cta-message strong {
+    font-size: 1.8rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 1.2rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .cta-btn.large {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .revenue-section {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .statement-line {
+    font-size: 1.1rem;
+  }
+
+  .power-text {
+    font-size: 0.9rem;
+  }
+
+  .power-text.emphasis {
+    font-size: 1rem;
+  }
+
+  .gold-text {
+    font-size: 1.2rem;
+  }
+
+  .badge-120 {
+    flex-direction: column;
+    padding: 0.8rem;
+    border-radius: 20px;
+  }
+
+  .badge-text {
+    font-size: 1.1rem;
+  }
+
+  .category-card {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .category-icon-wrapper {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+  }
+
+  .category-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .category-title {
+    font-size: 1.2rem;
+  }
+
+  .category-quote {
+    font-size: 1.0rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+  }
+
+  .earning-card {
+    padding: 1.2rem;
+    border-radius: 12px;
+  }
+
+  .earning-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .earning-level {
+    font-size: 1.1rem;
+  }
+
+  .earning-range {
+    font-size: 1.3rem;
+  }
+
+  .ocean-text {
+    font-size: 1.2rem;
+  }
+
+  .ocean-statement {
+    padding: 1.2rem;
+    border-radius: 12px;
+  }
+
+  .cta-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .cta-message {
+    font-size: 1.3rem;
+  }
+
+  .cta-message strong {
+    font-size: 1.5rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .cta-btn.large {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,71 @@
+.pp-section {
+    background: #0A1A2F;
+    color: #ffffff;
+    padding: 6rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.pp-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pp-title {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.pp-subtitle {
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pp-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(255, 204, 102, 0.25);
+    border-color: rgba(255, 204, 102, 0.4);
+}
+
+.pp-item h3 {
+    font-size: 1.4rem;
+    color: #FFCC66;
+    margin-bottom: 0.6rem;
+}
+
+.pp-item p {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    line-height: 1.6;
+}
+
+.pp-highlight {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #FFCC66;
+    border-top: 1px solid rgba(255, 204, 102, 0.3);
+    padding-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .pp-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .pp-title {
+        font-size: 2.2rem;
+    }
+
+    .pp-highlight {
+        font-size: 1.3rem;
+    }
+}

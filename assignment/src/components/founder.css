@@ -1,0 +1,1012 @@
+/* founder.css - Amol Patel Founder Section */
+
+:root {
+    --bg: #0A1A2F;
+    --gold: #D4AF37;
+    --gold-2: #FFCC66;
+    --foreground: #ffffff;
+    --white: #ffffff;
+    --dark-text: #0A1A2F;
+}
+
+/* Master container */
+.founder-master {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Individual founder sections */
+.founder-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    overflow: hidden;
+}
+
+/* Background variations */
+.navy-bg {
+    background: var(--bg);
+    color: var(--white);
+}
+
+.white-bg {
+    background: var(--white);
+    color: var(--dark-text);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.founder-badge:hover {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.3), rgba(255, 204, 102, 0.2));
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+}
+
+.opening-quote {
+    margin-top: 3rem;
+    padding: 2rem;
+    border-left: 4px solid var(--gold);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(255, 204, 102, 0.05));
+    border-radius: 10px;
+}
+
+.quote-line {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: var(--dark-text);
+    font-style: italic;
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+.quote-emphasis {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--gold);
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+/* ===== SECTION 2: International Entrepreneur ===== */
+.section-intro {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 600;
+    text-align: center;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 3rem 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission-item {
+    font-size: 1.3rem;
+    padding: 1.5rem;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.95);
+    border-left: 4px solid var(--gold);
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.mission-item:hover {
+    transform: translateX(10px);
+    background: rgba(212, 175, 55, 0.2);
+}
+
+.founder-statement {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 2.5rem;
+    background: rgba(212, 175, 55, 0.15);
+    border-radius: 20px;
+    border: 2px solid var(--gold);
+}
+
+.statement-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.statement-text strong {
+    color: var(--gold);
+    font-weight: 800;
+}
+
+.highlight {
+    color: var(--gold-2);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* ===== SECTION 3: Qualifications ===== */
+.qualifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.qualification-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(255, 204, 102, 0.1));
+    border-radius: 15px;
+    border: 2px solid var(--gold);
+    transition: all 0.3s ease;
+}
+
+.qualification-item:hover {
+    transform: translateX(15px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+}
+
+.qual-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: var(--gold);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.qual-icon {
+    width: 32px;
+    height: 32px;
+    color: var(--bg);
+}
+
+.qual-text {
+    font-size: 1.2rem;
+    color: var(--dark-text);
+    font-weight: 600;
+    margin: 0;
+}
+
+.blend-statement {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 2rem;
+    border-top: 3px solid var(--gold);
+    border-bottom: 3px solid var(--gold);
+}
+
+.blend-text {
+    font-size: 1.8rem;
+    color: var(--dark-text);
+    line-height: 1.7;
+}
+
+.blend-text.dark {
+    color: var(--dark-text);
+}
+
+.blend-text strong {
+    color: var(--gold);
+    font-weight: 800;
+}
+
+/* ===== SECTION 4: Guided by Values ===== */
+.values-intro {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 600;
+}
+
+.gratitude-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.gratitude-item {
+    font-size: 1.5rem;
+    padding: 2rem;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 15px;
+    border: 2px solid var(--gold);
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 700;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.gratitude-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+}
+
+.mission-statement {
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+.mission-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.highlight-text {
+    color: var(--gold-2);
+    font-weight: 800;
+}
+
+.emotional-quote {
+    margin-top: 4rem;
+    padding: 3rem;
+    background: rgba(212, 175, 55, 0.15);
+    border-radius: 20px;
+    border: 3px solid var(--gold);
+}
+
+.emotional-quote .quote-text {
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--gold-2);
+    line-height: 1.8;
+    font-weight: 600;
+}
+
+.emotional-quote .quote-text strong {
+    color: var(--gold);
+    font-size: 2.3rem;
+}
+
+/* ===== SECTION 5: Leadership Journey ===== */
+.journey-intro {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.journey-text {
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+    color: var(--dark-text);
+    line-height: 1.7;
+    font-weight: 600;
+}
+
+.journey-text.dark {
+    color: var(--dark-text);
+}
+
+.emphasis-gold {
+    color: var(--gold);
+    font-weight: 800;
+}
+
+.journey-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.journey-badge {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(255, 204, 102, 0.1));
+    padding: 1.2rem 2rem;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.journey-badge:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.5);
+}
+
+.achievements-section {
+    margin: 4rem 0;
+}
+
+.achievements-heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--dark-text);
+    font-weight: 700;
+}
+
+.achievements-heading.dark {
+    color: var(--dark-text);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.achievement-card {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(255, 204, 102, 0.1));
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 2px solid var(--gold);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.5);
+}
+
+.achievement-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.achievement-icon {
+    width: 30px;
+    height: 30px;
+    color: var(--bg);
+}
+
+.achievement-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+}
+
+.achievement-label {
+    font-size: 1.2rem;
+    color: var(--dark-text);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.special-achievements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.special-item {
+    font-size: 1.3rem;
+    padding: 1.5rem;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 12px;
+    color: var(--dark-text);
+    border-left: 4px solid var(--gold);
+    font-weight: 600;
+}
+
+.village-story {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 2.5rem;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 20px;
+}
+
+.story-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--dark-text);
+    font-weight: 600;
+}
+
+.story-text.dark {
+    color: var(--dark-text);
+}
+
+.journey-quote {
+    margin-top: 3rem;
+    padding: 2rem;
+    border-top: 3px solid var(--gold);
+    border-bottom: 3px solid var(--gold);
+}
+
+.journey-quote .quote-text {
+    font-size: 2.2rem;
+    font-style: italic;
+    color: var(--gold);
+    text-align: center;
+    font-weight: 700;
+}
+
+.journey-quote .quote-text.dark {
+    color: var(--gold);
+}
+
+/* ===== SECTION 6: Foundational Message ===== */
+.foundational-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(255, 204, 102, 0.15));
+    border-radius: 25px;
+    border: 4px solid var(--gold);
+    box-shadow: 0 20px 60px rgba(212, 175, 55, 0.4);
+    position: relative;
+}
+
+.foundational-box::before,
+.foundational-box::after {
+    content: '"';
+    position: absolute;
+    font-size: 8rem;
+    color: var(--gold);
+    opacity: 0.3;
+    font-family: Georgia, serif;
+}
+
+.foundational-box::before {
+    top: 1rem;
+    left: 2rem;
+}
+
+.foundational-box::after {
+    bottom: 1rem;
+    right: 2rem;
+    transform: rotate(180deg);
+}
+
+.foundational-quote {
+    text-align: center;
+}
+
+.main-quote {
+    font-size: 2.2rem;
+    line-height: 1.8;
+    color: var(--gold-2);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.quote-author {
+    font-size: 1.8rem;
+    color: var(--gold);
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+/* ===== SECTION 7: Final CTA ===== */
+.cta-section {
+    padding: 6rem 2rem;
+}
+
+.final-cta-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    color: var(--dark-text);
+}
+
+.cta-text.dark {
+    color: var(--dark-text);
+}
+
+.cta-text strong {
+    color: var(--gold);
+    font-size: 2rem;
+}
+
+.cta-btn {
+    border: none;
+    padding: 1.5rem 3rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Playfair Display', serif;
+    margin: 2rem auto;
+    display: block;
+}
+
+.cta-btn.primary {
+    background: linear-gradient(135deg, var(--gold), var(--gold-2));
+    color: var(--dark-text);
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.4);
+}
+
+.cta-arrow {
+    font-size: 3rem;
+    color: var(--gold);
+    text-align: center;
+    margin: 2rem 0;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+.scroll-text {
+    font-size: 1.3rem;
+    color: var(--dark-text);
+    text-align: center;
+}
+
+.scroll-text.dark {
+    color: var(--dark-text);
+}
+
+/* ===== Geometric Shapes & Animations ===== */
+.geometric-shapes {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.shape-1 {
+    width: 200px;
+    height: 200px;
+    top: 15%;
+    left: 10%;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(255, 215, 137, 0.1));
+}
+
+.shape-2 {
+    width: 280px;
+    height: 280px;
+    bottom: 10%;
+    right: 15%;
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.18), rgba(255, 215, 137, 0.09));
+}
+
+.shape-3 {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 40%;
+    border-radius: 30% 70% 70% 30% / 60% 40% 60% 40%;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(255, 215, 137, 0.06));
+}
+
+.shape-4 {
+    width: 120px;
+    height: 120px;
+    top: 20%;
+    right: 25%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.15), transparent 70%);
+}
+
+.shape-5 {
+    width: 180px;
+    height: 180px;
+    bottom: 25%;
+    left: 20%;
+    border-radius: 40% 60% 70% 30% / 50% 60% 40% 50%;
+    background: linear-gradient(135deg, rgba(255, 215, 137, 0.1), rgba(212, 175, 55, 0.05));
+}
+
+/* White background shapes - darker for visibility */
+.white-bg .shape {
+    opacity: 0.7;
+}
+
+.white-bg .shape-1,
+.white-bg .shape-2,
+.white-bg .shape-3 {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.3), rgba(255, 215, 137, 0.15));
+}
+
+.white-bg .shape-4 {
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.25), transparent 70%);
+}
+
+.white-bg .shape-5 {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(255, 215, 137, 0.1));
+}
+
+/* Connecting lines */
+.geometric-line {
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.4), transparent);
+    transform-origin: left center;
+}
+
+.line-1 {
+    top: 30%;
+    left: 20%;
+    width: 150px;
+}
+
+.line-2 {
+    bottom: 35%;
+    right: 25%;
+    width: 120px;
+    transform: rotate(-45deg);
+}
+
+/* ===== SECTION 1: FOUNDER INTRO LAYOUT ===== */
+.founder-intro-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+.founder-intro-content {
+    padding-right: 2rem;
+}
+
+.founder-intro-content .section-title {
+    text-align: left;
+}
+
+.founder-badges {
+    justify-content: flex-start;
+}
+
+.opening-quote {
+    text-align: left;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Image Container */
+.founder-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.founder-image-box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/4;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 4px solid var(--gold);
+    box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(255, 204, 102, 0.05));
+}
+
+.founder-profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.founder-image-box:hover .founder-profile-image {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to top, rgba(10, 26, 47, 0.9), transparent);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.founder-image-box:hover .image-overlay {
+    opacity: 1;
+}
+
+.overlay-icon {
+    width: 50px;
+    height: 50px;
+    color: var(--gold);
+}
+
+.founder-name-tag {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(255, 204, 102, 0.1));
+    border-radius: 15px;
+    border: 2px solid var(--gold);
+}
+
+.founder-name {
+    font-size: 2rem;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.founder-role {
+    font-size: 1.2rem;
+    color: var(--dark-text);
+    font-weight: 600;
+    margin: 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+    .founder-section {
+        min-height: auto;
+        padding: 4rem 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .qualifications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievements-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .founder-intro-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .founder-intro-content {
+        padding-right: 0;
+    }
+
+    .founder-intro-content .section-title {
+        text-align: center;
+    }
+
+    .founder-badges {
+        justify-content: center;
+    }
+
+    .opening-quote {
+        text-align: center;
+    }
+
+    .founder-image-box {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .founder-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quote-line {
+        font-size: 1.5rem;
+    }
+
+    .quote-emphasis {
+        font-size: 2rem;
+    }
+
+    .section-intro {
+        font-size: 1.3rem;
+    }
+
+    .mission-item {
+        font-size: 1.1rem;
+    }
+
+    .qualification-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .qualifications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gratitude-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-points {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .special-achievements {
+        grid-template-columns: 1fr;
+    }
+
+    .foundational-box {
+        padding: 2rem;
+    }
+
+    .main-quote {
+        font-size: 1.6rem;
+    }
+
+    .founder-image-box {
+        max-width: 350px;
+    }
+
+    .founder-name {
+        font-size: 1.7rem;
+    }
+
+    .shape-1,
+    .shape-2,
+    .shape-3 {
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 480px) {
+    .founder-section {
+        padding: 1.5rem 0.8rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .founder-badge {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .quote-line {
+        font-size: 1.1rem;
+    }
+
+    .quote-emphasis {
+        font-size: 1.4rem;
+    }
+
+    .mission-item {
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 10px;
+    }
+
+    .qualification-item {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .qual-text {
+        font-size: 1rem;
+    }
+
+    .achievement-card {
+        padding: 1.2rem;
+        border-radius: 15px;
+    }
+
+    .achievement-number {
+        font-size: 2.2rem;
+    }
+
+    .achievement-label {
+        font-size: 1rem;
+    }
+
+    .foundational-box {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+
+    .foundational-box::before,
+    .foundational-box::after {
+        font-size: 3rem;
+    }
+
+    .main-quote {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        width: 100%;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .shape-4,
+    .shape-5 {
+        display: none;
+    }
+
+    .founder-intro-layout {
+        padding: 0;
+        gap: 1.5rem;
+    }
+
+    .founder-image-box {
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    .founder-name {
+        font-size: 1.5rem;
+    }
+
+    .founder-role {
+        font-size: 1rem;
+    }
+
+    .opening-quote,
+    .journey-quote,
+    .emotional-quote {
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+    .statement-text,
+    .blend-text,
+    .mission-text,
+    .journey-text,
+    .story-text,
+    .cta-text {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+}

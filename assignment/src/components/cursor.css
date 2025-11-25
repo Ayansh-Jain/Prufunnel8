@@ -1,0 +1,58 @@
+:root {
+  --brand-yellow: #ffcc66;
+  --brand-dark: #413f3b;
+}
+
+/* Hide default cursor globally */
+html,
+body,
+*,
+a,
+button,
+input,
+textarea {
+  cursor: none !important;
+}
+
+/* Cursor base container */
+.custom-arrow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  pointer-events: none;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+}
+
+/* Arrow icon */
+.arrow-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--brand-yellow);
+  filter: drop-shadow(0 0 10px rgba(255, 204, 102, 0.8)) drop-shadow(0 0 4px rgba(255, 204, 102, 1));
+  transition: all 0.25s ease;
+}
+
+/* Hover state — grow + glow */
+.custom-arrow.hovered .arrow-icon {
+  transform: scale(1.4);
+  filter: drop-shadow(0 0 20px rgba(255, 204, 102, 1)) drop-shadow(0 0 8px rgba(255, 204, 102, 1));
+}
+
+/* Hide on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .custom-arrow {
+    display: none;
+  }
+
+  html,
+  body,
+  * {
+    cursor: auto !important;
+  }
+}

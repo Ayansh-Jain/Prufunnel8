@@ -1,0 +1,820 @@
+/* franchise.css - NITAI Franchise Ecosystem */
+
+:root {
+  --bg: #0A1A2F;
+  --gold: #D4AF37;
+  --gold-2: #FFCC66;
+  --foreground: #ffffff;
+  --white: #ffffff;
+  --dark-text: #0A1A2F;
+}
+
+/* Master container */
+.franchise-master {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Individual sections */
+.franchise-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  overflow: hidden;
+}
+
+/* Background variations */
+.navy-bg {
+  background: var(--bg);
+  color: var(--white);
+}
+
+.white-bg {
+  background: var(--white);
+  color: var(--dark-text);
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+.section-content {
+  padding: 2rem;
+}
+
+.section-content.centered {
+  text-align: center;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  color: var(--gold);
+  text-align: center;
+}
+
+.section-title.dark {
+  color: var(--dark-text);
+}
+
+.section-title.centered {
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold-2);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-subtitle.dark {
+  color: var(--gold);
+}
+
+/* ===== SECTION 1: Opening ===== */
+.opening-statement {
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
+.statement-text {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  color: var(--dark-text);
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.statement-text.dark {
+  color: var(--dark-text);
+}
+
+.intro-text {
+  font-size: 1.5rem;
+  margin: 3rem 0 2rem;
+  color: var(--dark-text);
+  line-height: 1.7;
+  text-align: center;
+  font-weight: 600;
+}
+
+.intro-text.dark {
+  color: var(--dark-text);
+}
+
+.leader-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.leader-badge {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(255, 204, 102, 0.1));
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.leader-badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+}
+
+.choice-text {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  color: var(--dark-text);
+  text-align: center;
+  font-style: italic;
+}
+
+.choice-text.dark {
+  color: var(--dark-text);
+}
+
+/* 3D Canvas containers */
+.franchise-3d-container,
+.franchise-3d-container-2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.franchise-3d-container {
+  top: 15%;
+  right: 8%;
+}
+
+.franchise-3d-container-2 {
+  bottom: 15%;
+  left: 8%;
+}
+
+.franchise-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: drop-shadow(0 10px 40px rgba(212, 175, 55, 0.35));
+}
+
+/* ===== SECTION 2: Franchise Levels ===== */
+.franchise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.franchise-card {
+  background: rgba(212, 175, 55, 0.1);
+  padding: 3rem;
+  border-radius: 25px;
+  border: 3px solid var(--gold);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.franchise-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-2));
+}
+
+.franchise-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 60px rgba(212, 175, 55, 0.5);
+  background: rgba(212, 175, 55, 0.15);
+}
+
+.franchise-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background: var(--gold);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.franchise-icon {
+  width: 45px;
+  height: 45px;
+  color: var(--bg);
+}
+
+.franchise-name {
+  font-size: 2rem;
+  color: var(--gold-2);
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.franchise-badge {
+  display: inline-block;
+  background: var(--gold-2);
+  color: var(--bg);
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.franchise-investment {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.invest-label {
+  display: block;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.invest-amount {
+  display: block;
+  font-size: 2rem;
+  color: var(--gold);
+  font-weight: 800;
+}
+
+.franchise-value {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: rgba(212, 175, 55, 0.15);
+  border-radius: 10px;
+  border: 2px solid var(--gold-2);
+}
+
+.value-label {
+  display: block;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.value-amount {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--gold-2);
+  font-weight: 800;
+}
+
+.rights-section,
+.earnings-section {
+  margin: 2rem 0;
+}
+
+.rights-title,
+.earnings-title {
+  font-size: 1.3rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.rights-list,
+.earnings-list {
+  list-style: none;
+  padding: 0;
+}
+
+.right-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.check-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--gold-2);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.earning-item {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0.8rem 0;
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+.franchise-quote {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 204, 102, 0.1);
+  border-left: 4px solid var(--gold-2);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: var(--gold-2);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+/* ===== SECTION 3: Journey Flow ===== */
+.journey-flow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+  position: relative;
+}
+
+.journey-step {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(255, 204, 102, 0.1));
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 2px solid var(--gold);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.journey-step:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: var(--gold);
+  color: var(--bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 5px 20px rgba(212, 175, 55, 0.5);
+}
+
+.step-title {
+  font-size: 2rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.step-description {
+  font-size: 1.2rem;
+  color: var(--dark-text);
+  line-height: 1.6;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.step-details {
+  font-size: 1rem;
+  color: var(--gold);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.step-arrow {
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: var(--gold);
+  font-weight: 800;
+}
+
+.journey-statement {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 3rem;
+  background: rgba(212, 175, 55, 0.1);
+  border-radius: 20px;
+  border: 3px solid var(--gold);
+}
+
+.statement-quote {
+  font-size: 2.2rem;
+  color: var(--gold);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.statement-quote.dark {
+  color: var(--gold);
+}
+
+/* ===== SECTION 4: Support Ecosystem ===== */
+.support-intro {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 2rem 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+}
+
+.support-grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 2.5rem;
+  margin: 3rem 0;
+}
+
+.support-card {
+  background: rgba(212, 175, 55, 0.1);
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 2px solid var(--gold);
+  transition: all 0.3s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(212, 175, 55, 0.4);
+  background: rgba(212, 175, 55, 0.15);
+}
+
+.support-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  background: var(--gold);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.support-icon {
+  width: 35px;
+  height: 35px;
+  color: var(--bg);
+}
+
+.support-title {
+  font-size: 1.6rem;
+  color: var(--gold-2);
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.support-list {
+  list-style: none;
+  padding: 0;
+}
+
+.support-item1 {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0.8rem 0;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+/* ===== SECTION 5: Final CTA ===== */
+.cta-section {
+  padding: 6rem 2rem;
+}
+
+.final-cta-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cta-imagine {
+  font-size: 2rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  color: var(--dark-text);
+  text-align: center;
+  font-weight: 600;
+}
+
+.cta-imagine.dark {
+  color: var(--dark-text);
+}
+
+.emphasis-gold {
+  color: var(--gold);
+  font-weight: 800;
+  font-size: 2.3rem;
+}
+
+.cta-btn {
+  border: none;
+  padding: 1.5rem 3rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.3rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Playfair Display', serif;
+  margin: 2rem auto;
+  display: block;
+}
+
+.cta-btn.primary {
+  background: linear-gradient(135deg, var(--gold), var(--gold-2));
+  color: var(--dark-text);
+  box-shadow: 0 10px 40px rgba(212, 175, 55, 0.4);
+}
+
+.cta-btn.large {
+  padding: 1.8rem 3.5rem;
+  font-size: 1.5rem;
+}
+
+.cta-scroll {
+  font-size: 1.4rem;
+  color: var(--dark-text);
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+.cta-scroll.dark {
+  color: var(--dark-text);
+}
+
+/* ===== Geometric Shapes & Animations ===== */
+.geometric-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.shape-1 {
+  width: 200px;
+  height: 200px;
+  top: 15%;
+  left: 10%;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(255, 215, 137, 0.1));
+}
+
+.shape-2 {
+  width: 280px;
+  height: 280px;
+  bottom: 10%;
+  right: 15%;
+  border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.18), rgba(255, 215, 137, 0.09));
+}
+
+.shape-3 {
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 40%;
+  border-radius: 30% 70% 70% 30% / 60% 40% 60% 40%;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(255, 215, 137, 0.06));
+}
+
+.shape-4 {
+  width: 120px;
+  height: 120px;
+  top: 20%;
+  right: 25%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15), transparent 70%);
+}
+
+.shape-5 {
+  width: 180px;
+  height: 180px;
+  bottom: 25%;
+  left: 20%;
+  border-radius: 40% 60% 70% 30% / 50% 60% 40% 50%;
+  background: linear-gradient(135deg, rgba(255, 215, 137, 0.1), rgba(212, 175, 55, 0.05));
+}
+
+/* White background shapes - darker for visibility */
+.white-bg .shape {
+  opacity: 0.7;
+}
+
+.white-bg .shape-1,
+.white-bg .shape-2,
+.white-bg .shape-3 {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.3), rgba(255, 215, 137, 0.15));
+}
+
+.white-bg .shape-4 {
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.25), transparent 70%);
+}
+
+.white-bg .shape-5 {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(255, 215, 137, 0.1));
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .franchise-section {
+    min-height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .franchise-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .journey-flow {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .step-arrow {
+    display: none;
+  }
+
+  .support-grid1 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .franchise-3d-container,
+  .franchise-3d-container-2 {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .statement-text {
+    font-size: 1.4rem;
+  }
+
+  .leader-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .franchise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .franchise-card {
+    padding: 2rem;
+  }
+
+  .journey-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .support-grid1 {
+    grid-template-columns: 1fr;
+  }
+
+  .franchise-3d-container,
+  .franchise-3d-container-2 {
+    display: none;
+  }
+
+  .shape-1,
+  .shape-2,
+  .shape-3 {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 480px) {
+  .franchise-section {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .statement-text {
+    font-size: 1.2rem;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+  }
+
+  .leader-badge {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+  }
+
+  .franchise-card {
+    padding: 1.2rem;
+    border-radius: 15px;
+  }
+
+  .franchise-name {
+    font-size: 1.6rem;
+  }
+
+  .invest-amount {
+    font-size: 1.6rem;
+  }
+
+  .franchise-quote {
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+  }
+
+  .journey-step {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+
+  .step-title {
+    font-size: 1.6rem;
+  }
+
+  .support-card {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+
+  .support-title {
+    font-size: 1.3rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 1.2rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .cta-btn.large {
+    padding: 1.4rem 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  .shape-4,
+  .shape-5 {
+    display: none;
+  }
+}

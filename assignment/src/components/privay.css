@@ -1,0 +1,127 @@
+:root {
+  --navy: #0A1A2F;
+  --gold: #D4AF37;
+  --gold-light: #ffdd8f;
+  --text-light: #ffffff;
+  --text-muted: #d8d8d8;
+}
+
+/* SECTION */
+.privacy-section {
+  background: var(--navy);
+  color: var(--text-light);
+  padding: 6rem 1.5rem;
+  min-height: 100vh;
+}
+
+.privacy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.privacy-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--gold);
+}
+
+.privacy-subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+  opacity: 0.8;
+  margin-bottom: 3.5rem;
+}
+
+/* CARD */
+.privacy-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+  transition: 0.3s ease;
+}
+
+.privacy-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+}
+
+/* TITLES */
+.privacy-card-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.privacy-line {
+  width: 90px;
+  height: 4px;
+  background: var(--gold);
+  margin: 1rem 0 1.7rem;
+}
+
+/* TEXT */
+.privacy-description {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+/* LIST */
+.privacy-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.privacy-list li {
+  margin-bottom: 0.6rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.privacy-list li::before {
+  content: "✔";
+  color: var(--gold);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+/* HIGHLIGHT */
+.privacy-highlight-text {
+  color: var(--gold-light);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .privacy-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .privacy-card {
+    padding: 1.8rem;
+  }
+
+  .privacy-card-title {
+    font-size: 1.7rem;
+  }
+
+  .privacy-description,
+  .privacy-list li {
+    font-size: 1.1rem;
+  }
+}

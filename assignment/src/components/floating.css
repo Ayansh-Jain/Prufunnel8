@@ -1,0 +1,173 @@
+/* === BASE WRAPPER === */
+.fa-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* === HERO VARIANT === */
+.fa-hero-circle-1 {
+  position: absolute;
+  top: 5rem;
+  right: 10%;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  border: 2px solid #D4AF37;
+  opacity: 0.2;
+}
+
+.fa-hero-circle-2 {
+  position: absolute;
+  top: 10rem;
+  left: 15%;
+  width: 10rem;
+  height: 10rem;
+  background: #D4AF37;
+  opacity: 0.1;
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.fa-hero-rings {
+  position: absolute;
+  bottom: 8rem;
+  right: 20%;
+  width: 8rem;
+  height: 8rem;
+}
+
+.fa-ring {
+  stroke: #D4AF37;
+  stroke-width: 1;
+  fill: none;
+  opacity: 0.15;
+}
+
+.fa-hero-dots-wrapper {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.fa-hero-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #D4AF37;
+  opacity: 0.25;
+  margin-bottom: 0.5rem;
+}
+
+/* === FOUNDER VARIANT === */
+.fa-founder-rings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  opacity: 0.15;
+}
+
+.fa-founder-ring,
+.fa-founder-line {
+  stroke: #D4AF37;
+  stroke-width: 0.5;
+  fill: none;
+  opacity: 0.5;
+}
+
+/* === FRANCHISE VARIANT === */
+.fa-franchise-circle {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: #D4AF37;
+  opacity: 0.08;
+  filter: blur(30px);
+}
+
+/* === BONUS VARIANT === */
+.fa-bonus-circle,
+.fa-bonus-circle-2 {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 1px solid #D4AF37;
+  opacity: 0.2;
+}
+
+.fa-bonus-circle {
+  top: 2.5rem;
+  right: 2.5rem;
+}
+
+.fa-bonus-circle-2 {
+  bottom: 2.5rem;
+  left: 2.5rem;
+}
+
+/* === CTA VARIANT === */
+.fa-cta-circle,
+.fa-cta-circle-2 {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: #D4AF37;
+  opacity: 0.1;
+  filter: blur(60px);
+}
+
+.fa-cta-circle {
+  top: 5rem;
+  left: 10%;
+}
+
+.fa-cta-circle-2 {
+  bottom: 5rem;
+  right: 10%;
+}
+
+/* === TESTIMONIAL DOTS === */
+.fa-testimonial-dot {
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #D4AF37;
+  opacity: 0.2;
+}
+
+/* === RESPONSIVE ADJUSTMENTS === */
+@media (max-width: 768px) {
+  .fa-hero-circle-1 {
+    width: 10rem;
+    height: 10rem;
+    top: 2rem;
+    right: 5%;
+  }
+
+  .fa-hero-circle-2 {
+    width: 6rem;
+    height: 6rem;
+    top: 5rem;
+    left: 5%;
+  }
+
+  .fa-founder-rings {
+    width: 300px;
+    height: 300px;
+  }
+
+  .fa-cta-circle,
+  .fa-cta-circle-2 {
+    width: 8rem;
+    height: 8rem;
+  }
+}

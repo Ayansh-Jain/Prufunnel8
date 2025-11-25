@@ -1,0 +1,88 @@
+:root {
+  --navy: #0A1A2F;
+  --gold: #D4AF37;
+  --text-light: #ffffff;
+  --text-muted: #cccccc;
+}
+
+/* MAIN PAGE */
+.terms-section {
+  background: var(--navy);
+  padding: 5rem 1.5rem;
+  min-height: 100vh;
+  color: var(--text-light);
+}
+
+.terms-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TITLES */
+.terms-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.8rem, 6vw, 4rem);
+  text-align: center;
+  color: var(--gold);
+  margin-bottom: 1.9rem;
+}
+
+.terms-subtitle {
+  display: none;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+}
+
+/* GRID LAYOUT */
+.terms-container {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .terms-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* CARDS */
+.terms-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease;
+}
+
+.terms-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* CARD TITLE */
+.terms-card h3 {
+  color: var(--gold);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: "Playfair Display", serif;
+}
+
+/* LISTS */
+.terms-card ul {
+  margin-left: 1.2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.terms-card li {
+  margin-bottom: 0.5rem;
+}
+
+.gold-text {
+  color: var(--gold);
+  font-weight: 700;
+  margin-top: 1.2rem;
+}
