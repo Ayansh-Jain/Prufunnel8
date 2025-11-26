@@ -48,7 +48,7 @@
 }
 
 .section-content {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .section-content.centered {
@@ -433,7 +433,7 @@
 }
 
 .statement-quote {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: var(--gold);
   font-style: italic;
   font-weight: 700;
@@ -441,7 +441,7 @@
 }
 
 .statement-quote.dark {
-  color: var(--gold);
+  color: var(--dark-text);
 }
 
 /* ===== SECTION 4: Support Ecosystem ===== */
@@ -715,7 +715,7 @@
   }
 
   .franchise-card {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .journey-flow {

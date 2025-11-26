@@ -48,7 +48,7 @@
 }
 
 .section-content {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .section-content.centered {
@@ -284,7 +284,7 @@
 
 .category-quote {
   margin-top: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   background: linear-gradient(135deg, rgba(212, 175, 55, 0.25), rgba(255, 204, 102, 0.15));
   border-radius: 15px;
   border: 2px solid var(--gold-2);
@@ -425,7 +425,7 @@
 }
 
 .cta-btn.large {
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
   font-size: 1.6rem;
 }
 
@@ -576,7 +576,7 @@
   }
 
   .category-card {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .category-header {
@@ -660,7 +660,7 @@
   }
 
   .earning-card {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .earning-icon {

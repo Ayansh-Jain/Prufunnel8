@@ -48,7 +48,7 @@
 }
 
 .section-content {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .section-content.centered {
@@ -325,7 +325,7 @@
 
 .authority-statement {
   margin-top: 4rem;
-  padding: 2rem;
+  padding: 1rem;
   border-top: 3px solid var(--gold);
   border-bottom: 3px solid var(--gold);
 }
@@ -418,7 +418,7 @@
 }
 
 .structure-column {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .structure-heading {
@@ -495,7 +495,7 @@
 .ecosystem-statement {
   margin-top: 4rem;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   background: rgba(212, 175, 55, 0.1);
   border-radius: 15px;
 }
@@ -825,7 +825,7 @@
   }
 
   .vm-card {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .stats-grid {

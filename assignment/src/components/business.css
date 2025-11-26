@@ -48,7 +48,7 @@
 }
 
 .section-content {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .section-content.centered {
@@ -265,7 +265,7 @@
 
 .pillar-quote {
   margin-top: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(255, 204, 102, 0.1));
   border-radius: 15px;
   border: 2px solid var(--gold-2);
@@ -575,7 +575,7 @@
   }
 
   .core-card {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .core-icon {

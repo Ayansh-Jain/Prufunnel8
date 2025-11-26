@@ -48,7 +48,7 @@
 }
 
 .section-content {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .section-content.centered {
@@ -63,7 +63,7 @@
     gap: 4rem;
     align-items: center;
     min-height: 80vh;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 /* Company Name Showcase */
@@ -273,7 +273,7 @@
     padding: 1.5rem;
     background: rgba(212, 175, 55, 0.1);
     border-radius: 15px;
-    
+
     border-left: 4px solid var(--gold);
     transition: all 0.3s ease;
     color: var(--dark-text);
@@ -287,7 +287,7 @@
 
 /* ===== SECTION 5: Mission ===== */
 .mission-statement {
-    font-size: 2.5rem;
+    font-size: 1rem;
     color: var(--gold);
     margin: 2rem 0;
     font-weight: 700;
@@ -374,7 +374,7 @@
 
 .franchise-type {
     background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(255, 204, 102, 0.1));
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 15px;
     font-size: 1.5rem;
     font-weight: 700;
@@ -465,7 +465,7 @@
 
 .final-quote {
     margin-top: 4rem;
-    padding: 2rem;
+    padding: 1rem;
     border-top: 2px solid var(--gold);
     border-bottom: 2px solid var(--gold);
 }
@@ -483,7 +483,7 @@
 
 .quote-text strong {
     color: var(--gold);
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* ===== Geometric Shapes & Animations ===== */
@@ -651,7 +651,7 @@
 
     .vision-points {
         grid-template-columns: 1fr;
-      
+
     }
 
     .franchise-types {

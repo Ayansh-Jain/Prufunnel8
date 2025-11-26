@@ -48,7 +48,7 @@
 }
 
 .section-content {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .section-content.centered {
@@ -220,7 +220,7 @@
 
 .position-pricing {
   background: rgba(255, 204, 102, 0.1);
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 15px;
   border: 2px solid var(--gold-2);
 }
@@ -517,7 +517,7 @@
   justify-content: center;
   gap: 1.5rem;
   margin: 4rem auto;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
   background: linear-gradient(135deg, var(--gold), var(--gold-2));
   color: var(--bg);
   font-size: 1.6rem;
@@ -700,7 +700,7 @@
   }
 
   .position-card {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .position-header {
@@ -761,7 +761,7 @@
   }
 
   .action-button-card {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .action-title {
