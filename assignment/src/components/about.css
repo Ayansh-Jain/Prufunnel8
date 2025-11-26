@@ -500,14 +500,14 @@
   border-radius: 15px;
 }
 
-.statement-text {
+.statement-text2 {
   font-size: 2rem;
   font-style: italic;
   color: var(--gold);
   font-weight: 700;
 }
 
-.statement-text.dark {
+.statement-text2.dark {
   color: var(--gold);
 }
 
@@ -836,8 +836,9 @@
     grid-template-columns: 1fr;
   }
 
-  .structure-grid {
+  .structure1-grid {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .milestones-grid {

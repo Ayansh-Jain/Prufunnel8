@@ -357,7 +357,7 @@ export default function WhyPartnerSection() {
             className="section-content"
           >
             {/* Founder AI Graphic */}
-            <div className="founder-ai-graphic-container">
+            <div className="founder-ai-graphic-container1">
               <div className="ai-sphere-glow"></div>
               <div className="founder-image-wrapper">
                 <img src="/pfp.png" alt="Founder Silhouette" className="founder-silhouette" />

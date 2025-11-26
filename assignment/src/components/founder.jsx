@@ -142,7 +142,7 @@ export default function FounderSection() {
             </div>
 
             <div className="founder-statement">
-              <p className="statement-text">
+              <p className="statement-text1">
                 He is the founder of <strong>NITAI Empire</strong>, a conglomerate working across<br />
                 <span className="highlight">12 sectors × 12 foundations × 12 organizations</span>,<br />
                 impacting thousands of lives directly and millions indirectly.

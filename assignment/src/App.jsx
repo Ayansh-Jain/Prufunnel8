@@ -1,5 +1,4 @@
 import './App.css'
-import './layout-fix.css'  // Production-safe layout fixes - must load last
 import { Routes, Route } from "react-router-dom";
 
 import HeroSection from './components/hero'

@@ -305,7 +305,7 @@ export default function AboutSection() {
               NITAI Ecosystem is systematically structured like a modern digital civilization, covering:
             </p>
 
-            <div className="structure-grid">
+            <div className="structure1-grid">
               <div className="structure-column">
                 <h3 className="structure-heading">12 Sectors</h3>
                 <div className="sectors-grid">
@@ -346,7 +346,7 @@ export default function AboutSection() {
             </div>
 
             <div className="ecosystem-statement">
-              <p className="statement-text dark">
+              <p className="statement-text2 dark">
                 NITAI is a self-sustaining universe of service + innovation.
               </p>
             </div>

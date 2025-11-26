@@ -273,6 +273,7 @@
     padding: 1.5rem;
     background: rgba(212, 175, 55, 0.1);
     border-radius: 15px;
+    
     border-left: 4px solid var(--gold);
     transition: all 0.3s ease;
     color: var(--dark-text);
@@ -650,6 +651,7 @@
 
     .vision-points {
         grid-template-columns: 1fr;
+      
     }
 
     .franchise-types {
