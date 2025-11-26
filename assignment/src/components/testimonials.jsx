@@ -2,8 +2,6 @@
 import './testimonials.css';
 //eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
-import { Canvas } from "@react-three/fiber";
-import { Float, Sphere, MeshDistortMaterial, Sparkles, OrbitControls, TorusKnot } from "@react-three/drei";
 import {
   Trophy,
   Users,
