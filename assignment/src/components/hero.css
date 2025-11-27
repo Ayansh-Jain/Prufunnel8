@@ -51,8 +51,12 @@
     padding: 1rem;
 }
 
-.section-content.centered {
+.section-content1.centered {
     text-align: center;
+    display: flex;
+ 
+    align-items: center;
+    justify-content: center;
 }
 
 /* ===== SECTION 1: Main Hero ===== */
@@ -247,7 +251,14 @@
     color: var(--gold);
     font-weight: 800;
 }
-
+video {
+    width: 600px;
+    aspect-ratio: 9/15;
+    object-fit: inherit;
+    overflow-y: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
 /* ===== SECTION 4: The Vision ===== */
 .vision-intro {
     font-size: 1.5rem;
@@ -610,6 +621,10 @@
         gap: 3rem;
         min-height: auto;
     }
+    .section-content1.centered{
+        flex-direction: column;
+        
+    }
 
     .company-brand {
         font-size: 3.5rem;
@@ -695,6 +710,10 @@
 
     .hero-cta-row {
         flex-direction: column;
+    }
+    video {
+        width: 90%;
+        margin-top: 2rem;
     }
 
     .cta-btn {

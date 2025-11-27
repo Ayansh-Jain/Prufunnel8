@@ -77,6 +77,7 @@ export default function AboutSection() {
 
       {/* SECTION 1: Opening - White Background */}
       <div className="about-section white-bg">
+
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -85,11 +86,11 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
             className="section-content centered"
           >
-            <h2 className="section-title dark">THE NITAI ECOSYSTEM</h2>
+            <div><h2 className="section-title dark">THE NITAI ECOSYSTEM</h2>
             <h3 className="section-subtitle dark">
               India's First Social + Digital + AI Civilization Development Movement
             </h3>
-
+            
             <div className="opening-hook">
               <p className="hook-line">"Before you join an empire… you must know the heart behind it."</p>
               <div className="hook-content">
@@ -101,6 +102,8 @@ export default function AboutSection() {
                 </p>
               </div>
             </div>
+            </div>
+            <video src="./k.mp4" loop autoPlay controls></video>
           </motion.div>
         </div>
 

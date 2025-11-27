@@ -259,23 +259,10 @@ export default function RevenueStreamsSection() {
             {/* India Map Graphic */}
             <div className="india-map-graphic-container">
               <div className="map-wrapper">
-                <img src="/map.jpg" alt="India Map Network" className="india-map-image" />
+                <div><img src="/map.jpg" alt="India Map Network" className="india-map-image" /></div>
                 {/* Spreading Nodes Overlay */}
-                <div className="spreading-nodes">
-                  {[...Array(8)].map((_, i) => (
-                    <motion.div
-                      key={i}
-                      className={`node node-${i}`}
-                      initial={{ scale: 0, opacity: 0 }}
-                      animate={{ scale: [0, 1.5, 1], opacity: [0, 1, 0] }}
-                      transition={{ duration: 3, repeat: 999999, delay: i * 0.5 }}
-                    />
-                  ))}
-                </div>
               </div>
-              <div className="map-caption">
-                <span className="caption-text">Spreading Across the Nation</span>
-              </div>
+  
             </div>
 
             <div className="earning-grid">

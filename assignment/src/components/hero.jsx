@@ -137,8 +137,14 @@ export default function HeroSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="section-content centered"
+            className="section-content1 centered"
           >
+            
+            
+            <div>
+              
+              <br />
+              <br /><br />
             <h2 className="section-title dark">Become the Master of AI in Your Region.</h2>
             <h3 className="section-subtitle dark">Build Your Own AI & Digital Empire.</h3>
             <p className="income-statement">
@@ -159,6 +165,8 @@ export default function HeroSection() {
                 <span className="cred-label">Students</span>
               </div>
             </div>
+            </div>
+            
           </motion.div>
         </div>
 

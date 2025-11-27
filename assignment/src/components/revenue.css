@@ -50,9 +50,23 @@
 .section-content {
   padding: 1rem;
 }
+.map-wrapper{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
 .section-content.centered {
   text-align: center;
+}
+.india-map-image{
+  width: 50vw;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 /* Section Titles */

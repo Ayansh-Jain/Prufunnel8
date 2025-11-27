@@ -35,7 +35,7 @@ body {
 /* Ensure images and media don't break layouts */
 img,
 picture,
-video,
+
 canvas,
 svg {
   display: block;
