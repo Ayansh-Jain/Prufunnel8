@@ -36,17 +36,10 @@ export default function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="hero-badge"
               >
-                Digital Empire Master Franchise Ecosystem
+                NITAI AI:Digital Empire Master Franchise Ecosystem
               </motion.div>
               {/* Company Name Showcase */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                className="company-name-showcase"
-              >
-                <span className="company-brand">NITAI AI</span>
-              </motion.div>
+             
 
              
 
@@ -79,6 +72,15 @@ export default function HeroSection() {
                 <span className="mission-tag">🌟 Nitai Beggar-Free India</span>
                 <span className="mission-tag">🌟 Nitai Ideal Smart Village</span>
               </motion.div>
+
+              <motion.button
+                              whileHover={{ scale: 1.06, boxShadow: "0 12px 40px rgba(212, 175, 55, 0.6)" }}
+                              whileTap={{ scale: 0.97 }}
+                              className="cta-btn1"
+                              onClick={() => window.open("https://lp.nitaigroup.com/webinar-leads", "_blank")}
+                            >
+                              Apply Now
+                            </motion.button>
             </motion.div>
 
             {/* Right 3D Canvas */}
@@ -246,9 +248,10 @@ export default function HeroSection() {
           </motion.div>
         </div>
       </div>
-
+    
       {/* SECTION 5: Mission - Navy Blue Background */}
       <div className="hero-section navy-bg">
+        <div className='hori'>
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -279,11 +282,18 @@ export default function HeroSection() {
             transition={{ duration: 3, repeat: 999999, ease: "easeInOut", delay: 1 }}
           />
         </div>
+        <img src="./s2.jpg" alt="" className='horimg'/>
+        </div>
       </div>
+      
+      
 
       {/* SECTION 6: Why You Are Here - White Background */}
       <div className="hero-section white-bg">
+        
         <div className="container">
+          <div className='hori'>
+          <img src="./s1.jpg" alt="" className='horimg'/>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -303,6 +313,7 @@ export default function HeroSection() {
               <p className="why-conclusion">And deep inside…<br /><strong>You know this is your moment.</strong></p>
             </div>
           </motion.div>
+        </div>
         </div>
       </div>
 
@@ -335,6 +346,16 @@ export default function HeroSection() {
               When they're gone — they're gone forever.
             </p>
           </motion.div>
+          <div className='centercta'>
+                        <motion.button
+                              whileHover={{ scale: 1.06, boxShadow: "0 12px 40px rgba(212, 175, 55, 0.6)" }}
+                              whileTap={{ scale: 0.97 }}
+                              className="cta-btn1"
+                              onClick={() => window.open("https://lp.nitaigroup.com/webinar-leads", "_blank")}
+                            >
+                              Apply Now
+                            </motion.button>
+                            </div>
         </div>
 
         <div className="geometric-shapes">

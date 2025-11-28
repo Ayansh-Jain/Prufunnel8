@@ -279,7 +279,7 @@
 
 .multiplier-statement {
   margin-top: 3rem;
-  padding: 3rem;
+  padding:1rem;
   background: rgba(212, 175, 55, 0.2);
   border-radius: 20px;
   border: 3px solid var(--gold);
@@ -287,7 +287,7 @@
 }
 
 .multiplier-text {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: var(--white);
   font-style: italic;
   font-weight: 700;

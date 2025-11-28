@@ -52,10 +52,10 @@ export default function Footer() {
           <div className="ft-links-block">
             <h4 className="ft-links-title">Legal</h4>
             <div className="ft-links-list">
-              <li><a href="https://app.myprofunnels.com/v2/preview/oV5zdgRatECx4Tm6l6y4?notrack=true" className="ft-link">Privacy Policy</a>
+              <li><a href="/privacy-policy" className="ft-link">Privacy Policy</a>
 </li>
               <li>
-  <a href="https://app.myprofunnels.com/v2/preview/oV5zdgRatECx4Tm6l6y4?notrack=true" className="ft-link">Terms & Conditions</a>
+  <a href="/terms" className="ft-link">Terms & Conditions</a>
 </li>
 
               <li><a className="ft-link" href="#disclaimer">Disclaimer</a></li>

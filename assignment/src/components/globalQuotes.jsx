@@ -200,6 +200,16 @@ export default function GlobalQuotesSection() {
               </p>
             </div>
           </motion.div>
+          <div className='centercta'>
+                        <motion.button
+                              whileHover={{ scale: 1.06, boxShadow: "0 12px 40px rgba(212, 175, 55, 0.6)" }}
+                              whileTap={{ scale: 0.97 }}
+                              className="cta-btn1"
+                              onClick={() => window.open("https://lp.nitaigroup.com/webinar-leads", "_blank")}
+                            >
+                              Apply Now
+                            </motion.button>
+                            </div>
         </div>
 
 
@@ -305,6 +315,7 @@ export default function GlobalQuotesSection() {
                   </ul>
                 </motion.div>
               ))}
+              
             </div>
 
             <div className="pain-opportunity">
@@ -313,6 +324,16 @@ export default function GlobalQuotesSection() {
               </p>
             </div>
           </motion.div>
+          <div className='centercta'>
+                        <motion.button
+                              whileHover={{ scale: 1.06, boxShadow: "0 12px 40px rgba(212, 175, 55, 0.6)" }}
+                              whileTap={{ scale: 0.97 }}
+                              className="cta-btn1"
+                              onClick={() => window.open("https://lp.nitaigroup.com/webinar-leads", "_blank")}
+                            >
+                              Apply Now
+                            </motion.button>
+                            </div>
         </div>
 
         <div className="geometric-shapes">
