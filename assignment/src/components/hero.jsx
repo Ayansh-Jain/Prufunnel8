@@ -58,7 +58,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="sub-headline"
               >
-                Create AI-Powered Wealth. Empower Humanity.
+                 Earn ₹1.2 Lakhs to ₹1.2 Crore Per Month in AI Era
               </motion.h2>
 
               <motion.div
@@ -282,7 +282,7 @@ export default function HeroSection() {
             transition={{ duration: 3, repeat: 999999, ease: "easeInOut", delay: 1 }}
           />
         </div>
-        <img src="./s2.jpg" alt="" className='horimg'/>
+        <img src="./s1.png" alt="" className='horimg'/>
         </div>
       </div>
       
@@ -293,7 +293,7 @@ export default function HeroSection() {
         
         <div className="container">
           <div className='hori'>
-          <img src="./s1.jpg" alt="" className='horimg'/>
+          <img src="./s2.jpg" alt="" className='horimg'/>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

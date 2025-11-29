@@ -41,10 +41,12 @@ export default function Footer() {
           <div className="ft-links-block">
             <h4 className="ft-links-title">Quick Links</h4>
             <div className="ft-links-list">
-              <li><a className="ft-link" href="/">About Us</a></li>
-              <li><a className="ft-link" href="/">Franchise Levels</a></li>
-              <li><a className="ft-link" href="/">Success Stories</a></li>
-              <li><a className="ft-link" href="/">FAQ</a></li>
+              <li><a className="ft-link" href="https://www.nitaigroup.com/quick-links/nitai-world">Nitai World</a></li>
+              <li><a className="ft-link" href="https://www.nitaigroup.com/quick-links/nitai-empire">Nitai Empire</a></li>
+              <li><a className="ft-link" href="https://www.nitaigroup.com/quick-links/waio">World AI Organization</a></li>
+              <li><a className="ft-link" href="https://www.nitaigroup.com/quick-links/wdc">World Development Council</a></li>
+              <li><a className="ft-link" href="https://www.nitaigroup.com/quick-links/wfa">World Farmers Association</a></li>
+              <li><a className="ft-link" href="https://www.nitaigroup.com/quick-links/nic">Incubation Centers</a></li>
             </div>
           </div>
 
@@ -66,9 +68,9 @@ export default function Footer() {
           <div className="ft-links-block">
             <h4 className="ft-links-title">Get in Touch</h4>
             <div className="ft-links-list">
-              <li><a className="ft-link" href="mailto:info@nitai.com">Email</a></li>
+              <li><a className="ft-link" href="mailto:info@nitai.com">nitaigroup.12@gmail.com</a></li>
               <li><a className="ft-link" href="tel:+919340952324">9340952324</a></li>
-              <li><a className="ft-link">Address</a></li>
+              <li><a className="ft-link">International Head Quater 29 , Umari , Village Umari , Damoh MP Bharat 470661</a></li>
             </div>
           </div>
 
@@ -76,7 +78,7 @@ export default function Footer() {
 
         <div className="ft-bottom">
           <p>
-            &copy; {new Date().getFullYear()} NITAI AI & Digital Empire. All rights reserved.
+            &copy; {new Date().getFullYear()} NITAI AI & Digital Empire.All rights reserved. Serving Humanity Universally - Physically, Mentally, Socially, Economically & Spiritually.
           </p>
 
           <p className="ft-powered">

@@ -103,7 +103,7 @@ export default function AboutSection() {
               </div>
             </div>
             </div>
-            <video src="./k.mp4" loop autoPlay controls></video>
+            <video src="./k.mp4" loop autoPlay controls muted></video>
           </motion.div>
         </div>
 
@@ -311,7 +311,7 @@ export default function AboutSection() {
             <div className="structure1-grid">
               <div className="structure-column">
                 <h3 className="structure-heading">12 Sectors</h3>
-                <div className="sectors-grid">
+                <div className="sectors1-grid">
                   {sectors.map((sector, index) => (
                     <motion.div
                       key={sector}

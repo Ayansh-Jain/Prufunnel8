@@ -328,7 +328,7 @@ export default function CTASection() {
             className="section-content centered"
           >
             <Heart className="legacy-heart-icon" />
-            <h2 className="section-title centered">💛 PURPOSE + PROFIT + IMPACT</h2>
+            <h2 className="section-title centered">PURPOSE + PROFIT + IMPACT</h2>
 
             <p className="legacy-intro">
               By becoming a Nitai AI & Digital Master Franchise, you're not only earning…<br />

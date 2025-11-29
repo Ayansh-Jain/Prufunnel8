@@ -5,7 +5,7 @@
   --gold: #D4AF37;
   --gold-2: #FFCC66;
   --foreground: #ffffff;
-  --white: #ffffff;
+  --white: #FAF9F6;
   --dark-text: #0A1A2F;
 }
 
@@ -560,7 +560,7 @@
 }
 
 .cta-btn.large {
-  padding: 1.8rem 3.5rem;
+  padding: 1.8rem 1.5rem;
   font-size: 1.5rem;
 }
 
@@ -809,7 +809,7 @@
   }
 
   .cta-btn.large {
-    padding: 1.4rem 2.5rem;
+    padding: 1.1rem 1.5rem;
     font-size: 1.2rem;
   }
 

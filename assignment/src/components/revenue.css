@@ -5,7 +5,7 @@
   --gold: #D4AF37;
   --gold-2: #FFCC66;
   --foreground: #ffffff;
-  --white: #ffffff;
+  --white: #FAF9F6;
   --dark-text: #0A1A2F;
 }
 
@@ -66,7 +66,7 @@
   width: 50vw;
   height: auto;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  
 }
 
 /* Section Titles */
